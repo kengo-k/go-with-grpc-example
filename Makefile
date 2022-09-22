@@ -9,3 +9,6 @@ release:
 
 start:
 	docker-compose run -p 3000:3000 --rm production
+
+connect:
+	docker-compose run -p 3000:3000 --rm production ash
