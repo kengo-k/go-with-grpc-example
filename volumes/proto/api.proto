@@ -1,0 +1,17 @@
+syntax ="proto3";
+
+package sample;
+
+option go_package = "pb/";
+
+service SampleService {
+  rpc Add(AddRequest) returns (AddResponse) {}
+}
+
+message AddRequest {
+  repeated int32 values = 1;
+}
+
+message AddResponse {
+  int32 sum = 1;
+}
