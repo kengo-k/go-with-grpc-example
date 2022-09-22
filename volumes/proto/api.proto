@@ -2,7 +2,7 @@ syntax ="proto3";
 
 package sample;
 
-option go_package = "pb/";
+option go_package = "pb/;pb";
 
 service SampleService {
   rpc Add(AddRequest) returns (AddResponse) {}
