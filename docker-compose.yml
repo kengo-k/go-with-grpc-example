@@ -12,3 +12,4 @@ services:
   production:
     image: sample-grpc-server-with-go:v1.0.0
     container_name: sample-grpc-server-with-go-prod
+    tty: true
