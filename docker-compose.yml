@@ -3,7 +3,7 @@ version: "3.8"
 services:
   app:
     build:
-      context: .
+      context: docker/dev
     container_name: sample-grpc-server-with-go
     tty: true
     volumes:
